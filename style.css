@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color:antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    font-size: 25px;
+    height: 60px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  .underlined {
+    /*   background: red; */
+      position: relative;
+    }
+    
+   
+    .underline-overflow {
+      display: inline-block;
+      /* A little extra padding and overflow hidden   */
+      overflow: hidden;
+      padding-bottom: clamp(1rem, 2vmin, 2rem);
+    }
+    .underline-overflow:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      height: 150%;
+      aspect-ratio: 2.5 / 1;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      border-radius: 50%;
+      border: 6px solid gray
+    }
+    
+    .underline-clip:after {
+      content: '';
+      position: absolute;
+      top: 95%;
+      width: 150%;
+      aspect-ratio: 3 / 1;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-radius: 50%;
+      border: 6px solid black;
+      /* Use a clip-path to hide and show the bits you want */
+      clip-path: polygon(0 0, 50% 50%, 100% 0);
+    }
+
+#greetings {
+    display: block;
+    background-color: white;
+  font-size:x-large;
+ padding-top: 50px;
+ padding-bottom:50px ;
+   text-align: center;
+}
+#greetingsAbout {
+    display: block;
+  font-size:x-large;
+ padding-top: 50px;
+ padding-bottom:50px ;
+   text-align: center;
+}
