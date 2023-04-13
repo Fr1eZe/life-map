@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Life-map</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -20,8 +20,39 @@
         <a href="Builder.html">Map Builder</a>
         <a href="About.html">About</a>
       </div>
-      
 
-  <script src="index.js"></script>
+      <button onclick="callquestion1()">Ask first question</button>
+      <div class="word-block"> 
+        <h2 id="output">Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+      <div class="word-block">
+        <h2>Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+      <div class="word-block">
+        <h2>Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+      <div class="word-block">
+        <h2>Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+      <div class="word-block">
+        <h2>Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+      <div class="word-block">
+        <h2>Beautiful Word Block</h2>
+        <p>Here is some text to describe the word block.</p>
+      </div>
+
+      <script>
+        function callquestion1(){
+        var questionOne = prompt("How are you?")
+document.getElementById('output').innerHTML = questionOne
+        }
+      </script>
+      <script src="script.js"></script>
   </body>
 </html>
