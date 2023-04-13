@@ -75,9 +75,11 @@
     }
 
 #greetings {
-    display: block;
+    display: flexbox;
     background-color: white;
   font-size:x-large;
+  margin-left: 400px;
+  margin-right: 400px;
  padding-top: 50px;
  padding-bottom:50px ;
    text-align: center;
